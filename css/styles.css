@@ -26,6 +26,7 @@ body {
 .logo {
     color: var(--clear-black);
     font-family: "Raleway", sans-serif;
+    font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
     text-decoration: none;
@@ -253,7 +254,7 @@ body {
 
 .location {
     font-size: 14px;
-    line-height: 24px;
+    line-height: 1.71;
     color: var(--main-white);
     text-decoration: none;
 }
