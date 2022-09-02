@@ -152,13 +152,14 @@ body {
 
 .team {
     background: var(--secondary-background);
+    line-height: 1.18;
+    text-align: center;
 }
 
 .team-title {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
-    text-align: center;
 }
 
 .team-list {
@@ -171,15 +172,11 @@ body {
 .team-name {
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
 }
 
 .team-desc {
-    font-size: 16px;
-    line-height: 1.18;
     color: var(--secondary-text);
-    text-align: center;
+    font-size: 16px;
 }
 
 /* ---------portfolio main content----------- */
