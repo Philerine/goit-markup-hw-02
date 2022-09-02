@@ -231,7 +231,8 @@ body {
 /* footer */
 
 .footer {
-    background: var(--hero-background-color)
+    background: var(--hero-background-color);
+    line-height: 1.71;
 }
 
 .logo-footer {
@@ -239,14 +240,11 @@ body {
 }
 
 .footer-address {
-    line-height: 1.71;
     list-style-type: none;
     font-style: normal;
 }
 
 .location {
-    font-size: 14px;
-    line-height: 1.71;
     color: var(--main-white);
     text-decoration: none;
 }
