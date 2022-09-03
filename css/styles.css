@@ -12,8 +12,6 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    font-weight: 400;
     letter-spacing: 0.03em;
     color: var(--main-text);
     font-size: 14px;
@@ -40,34 +38,34 @@ body {
 
 .header {
     background-color: var(--main-white);
+}
+
+/* nav */
+
+.nav-list, .contacts{
+    list-style-type: none;
     font-weight: 500;
     line-height: 1.14;
     letter-spacing: 0.02em;
 }
 
-/* nav */
-
-.nav{
-    list-style-type: none;
-}
-
-.nav-list {
+.nav-link {
     text-decoration: none;
     color: inherit;
 }
 
-.nav-list:hover,
-.nav-list:focus {
+.nav-link-current {
+    color: var(--accent-color);
+}
+
+.nav-link:hover,
+.nav-link:focus {
     color: var(--accent-color);
 }
 
 /* contacts */
 
-.contacts {
-    list-style-type: none;
-}
-
-.contacts-list {
+.contacts-link {
     text-decoration: none;
     color: var(--secondary-text)
 }
@@ -81,7 +79,6 @@ body {
 
 .hero {
     background: var(--hero-background-color);
-    letter-spacing: 0.06em;
     text-align: center;
 }
 
@@ -89,6 +86,7 @@ body {
     font-weight: 900;
     font-size: 44px;
     line-height: 1.36;
+    letter-spacing: 0.06em;
     text-transform: uppercase;
     color: var(--main-white)
 }
@@ -117,7 +115,7 @@ body {
     background-color: var(--primary-background);
 }
 
-.hidden-title {
+.visually-hidden {
     display: none;
 }
 
@@ -125,19 +123,20 @@ body {
     list-style-type: none;
 }
 
-.title-list {
+.qualities-title {
     line-height: 1.14;
     text-transform: uppercase;
+    font-size: 14px;
 }
 
-.description {
+.qualities-description {
     line-height: 1.71;
     color: var(--secondary-text)
 }
 
 /* activity */
 
-.activity-title {
+.section-title {
     font-size: 36px;
     line-height: 1.17;
     text-align: center;
@@ -151,14 +150,7 @@ body {
 
 .team {
     background: var(--secondary-background);
-    line-height: 1.18;
     text-align: center;
-}
-
-.team-title {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.17;
 }
 
 .team-list {
@@ -170,11 +162,13 @@ body {
 
 .team-name {
     font-weight: 500;
+    line-height: 1.18;
     font-size: 16px;
 }
 
 .team-desc {
     color: var(--secondary-text);
+    line-height: 1.18;
     font-size: 16px;
 }
 
@@ -184,11 +178,13 @@ body {
     list-style-type: none;
 }
 
+.filter-button-active {
+    background-color: var(--accent-color);
+}
+
 .filter-button {
     font-family: inherit;
     color: var(--main-text);
-    width: 112px;
-    height: 38px;
     background: var(--secondary-background);
     cursor: pointer;
     border-style: none;
@@ -198,6 +194,7 @@ body {
     line-height: 1.6;
     text-align: center;
     letter-spacing: 0.03em;
+    padding: 6px 22px;
 }
 
 .filter-button:hover,
@@ -215,7 +212,6 @@ body {
 }
 
 .example-title {
-    font-weight: 700;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
@@ -231,7 +227,6 @@ body {
 
 .footer {
     background: var(--hero-background-color);
-    line-height: 1.71;
 }
 
 .logo-footer {
@@ -241,6 +236,7 @@ body {
 .footer-address {
     list-style-type: none;
     font-style: normal;
+    line-height: 1.71;
 }
 
 .location {
@@ -248,9 +244,9 @@ body {
     text-decoration: none;
 }
 
-.location:hover,
-.location:focus {
-    color: var(--accent-color)
+.contacts-list {
+    color: var(--secondary-text);
+    text-decoration: none;
 }
 
 .contacts-list:hover,
