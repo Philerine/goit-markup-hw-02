@@ -178,8 +178,9 @@ body {
     list-style-type: none;
 }
 
-.filter-button-active {
+.filter-button.filter-button-active {
     background-color: var(--accent-color);
+    color: var(--main-white);
 }
 
 .filter-button {
